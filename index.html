@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="aurem-logo">
+            <a target="_blank" href="http://www.aurem.com.br">
+                <svg id="aurem" data-name="Logo Aurem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.89 45"
+                    height="32">
+                    <path fill="#FFFFFF"
+                        d="M10.19,30.59,17.45,10.9l7.82,19.69Zm177.28,8.32a2.77,2.77,0,1,1-2.77,2.77,2.77,2.77,0,0,1,2.77-2.77Zm-145,4.62c-1.71-.12-3.16.19-5.24-4.86,0,0-4.23-10.79-15.84-38.62h-.82L9.75,28.83C3.94,43.53,2.36,43.47.34,43.53v.95H15.17v-.95c-9.4.38-6.06-9.46-5.17-12H25.65l2,5.05c.76,1.77,2.71,6.94-1.45,6.94v.95H42.44v-.95Zm32.82-.88C72.61,42.33,72,42,72,38.93V14.75L62.38,16v.95c3.16.25,3,.88,3,4.73V36.72c-1.2,2.58-3.6,4.48-6,4.48-3.66,0-5.93-1.77-5.93-5.93V14.75L43.26,16v.95c3.66.38,3.53.76,3.53,4.73V35.45c0,7.7,3.73,9.6,8.46,9.6,4.1,0,8.77-3.09,10.1-6.57v5.43s0,1.33,1.64,1.07l8.27-1.45v-.88ZM95.26,15c-2,.5-5.11,1.83-8,6.56V14.75L77.4,16.9v1c2.59.94,3.16,1.89,3.16,4V37.66c0,3.29-.13,5.12-2.53,5.87v.95H89.9v-.95c-2.27-.63-2.59-2.33-2.59-5.87V23.21c2.15-4,5.56-5.05,5.43-4.17a3.83,3.83,0,0,0,1.07,2.78,4.15,4.15,0,0,0,5.81-.06,4.07,4.07,0,0,0,0-5.74,5,5,0,0,0-4.36-1Zm15.66,13.38c0-7,3.28-12.69,6.94-12.69,3.22,0,6.56,4.1,6.56,12.69Zm18.17,8.07c-1.39,3-6.12,4.8-9.78,4.23-4.54-.69-8-4-8.39-11.36H131c0-9.91-4.61-14.58-12.88-14.58S103.85,21,103.85,30.09c0,7.89,5.68,15,13.69,15s11.62-5,12.44-8.14l-.89-.45Zm52.2,7.07c-2.27-.57-2.59-2.33-2.59-5.8V24.6c0-7.64-3.09-9.85-8.14-9.85a10.21,10.21,0,0,0-9.28,6.76c-.82-4.74-3.53-6.76-7.95-6.76a10.6,10.6,0,0,0-9.28,6.5v-6.5l-9.84,2.15v1c2.58,1.07,3.15,2.14,3.15,4.35V37.79c0,3.22-.06,5.05-2.46,5.74v.95h11.74v-.95c-2.21-.63-2.59-2.27-2.59-5.74V23.9c.25-2.2,2.78-5.3,5.56-5.3,3.4,0,5.11,2.15,5.11,6.19V37.73c0,3.22-.13,5.11-2.53,5.8v.95H164v-.95c-2.27-.57-2.58-2.33-2.58-5.8l-.07-12.88V24c0-2.4,2.72-5.43,5.49-5.43,3.41,0,5.18,2.15,5.18,6.19V37.73c0,3.22-.13,5.11-2.52,5.8v.95h11.8Z"
+                        transform="translate(-0.34 -0.05)" />
+                </svg>
+            </a>
+        </div>
+        <div class="cta-aurem">
+            <nav class="navigation-aurem">
+                <p class="aurem-info"> Quer saber mais sobre a Aurem? </p>
+                <a class="aurem-site" target="_blank" href="http://www.aurem.com.br">
+                    Visite nosso site
+                    <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+                        viewBox="0 0 256 256">
+                        <rect width="100" height="100" fill="none"></rect>
+                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#FFFFFF" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="144 56 216 128 144 200" fill="none" stroke="#FFFFFF" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="text-box">
+            <button class="btn" id="skip-effect"> Pular </button>
+            <div class="typing-text" id="apresentation-text"> </div>
+            <form id="form">
+                <div id="name" class="hidden">
+                    <span> Qual é o seu nome? * </span>
+                    <div class="inputs">
+                        <label for="nome"> </label>
+                        <input type="text" id="firstName">
+                        <a class="btn continue" href="#lastName" onclick="changeState('last-name')">Continue</a>
+                    </div>
+                </div>
+
+                <div id="last-name" class="hidden">
+                    <span> E seu sobrenome? *</span>
+                    <div class="inputs">
+                        <label for="sobrenome"> </label>
+                        <input type="text" id="lastName">
+                        <a class="btn continue" href="#email-input" onclick="changeState('email')">Continue</a>
+                    </div>
+                </div>
+
+                <div id="email" class="hidden">
+                    <span> Qual seu e-mail que você mais usa? *</span>
+                    <div class="inputs">
+                        <label for="e-mail"> </label>
+                        <input type="text" name="email" id="email-input">
+                        <a class="btn continue" href="#CV" onclick="changeState('curriculum')">Continue</a>
+                    </div>
+                </div>
+
+                <div id="curriculum" class="hidden">
+                    <span> Quase lá! Agora precisamos do seu currículo. *</span>
+                    <div class="inputs" id="curriculumVitae">
+                        <label for="curriculo"> </label>
+                        <input type="file" id="CV">
+                        <a class="btn continue" href="#message" onclick="changeState('user-message')">Continue</a>
+
+                    </div>
+                </div>
+
+                <div id="user-message" class="hidden">
+                    <span> Deixe uma mensagem :D </span>
+                    <div class="inputs">
+                        <label for="message"> </label>
+                        <input type="text" id="message">
+                        <a class="btn continue" href="#news" onclick="changeState('update')">Continue</a>
+                    </div>
+                </div>
+
+                <div id="update" class="hidden">
+                    <span> Deseja receber atualizações e anúncios por e-mail? <br>
+                        Digite "s" para sim ou "n" para não *</span>
+                    <div class="inputs news">
+                        <label for="updates"> </label>
+                        <input type="text" id="news">
+                    </div>
+                    <button class="send" type="submit" onclick="checkForm();"> Enviar </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./script.js">
+    </script>
+</body>
+
+<footer class="wrapper">
+    Developed by Caroliny - Fullstack Intern 💙 Aurem.
+</footer>
+
+</html>
